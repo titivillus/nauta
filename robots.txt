@@ -1,0 +1,4 @@
+Sitemap: http://nauta.cat/sitemap.xml
+
+User-agent: *
+Allow: /

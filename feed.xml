@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Nauta</title>
+  <subtitle>Un espai efímer en un món en evolució constant</subtitle>
+  <id>http://nauta.cat/</id>
+  <link href="http://nauta.cat/"/>
+  <link href="http://nauta.cat/feed.xml" rel="self"/>
+  <updated>2015-01-07T18:22:00+01:00</updated>
+  <author>
+    <name>Antoni</name>
+  </author>
+  <entry>
+    <title>En memòria de les víctimes de l'atac al 'Charlie Hebdo'</title>
+    <link rel="alternate" href="http://nauta.cat/bloc/en-memoria-de-les-victimes-de-l-atac-al-charlie-hebdo/"/>
+    <id>http://nauta.cat/bloc/en-memoria-de-les-victimes-de-l-atac-al-charlie-hebdo/</id>
+    <published>2015-01-07T18:22:00+01:00</published>
+    <updated>2015-01-08T16:36:54+01:00</updated>
+    <author>
+      <name>Antoni</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img src="/imatges/ll-negre.png" alt="Llaç negre" title="En memòria de les víctimes de l'atac al 'Charlie Hebdo'" style="margin:0px auto;display:block;height:110px;weight:auto" /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>El controvertit domini .io</title>
+    <link rel="alternate" href="http://nauta.cat/bloc/el-controvertit-domini-io/"/>
+    <id>http://nauta.cat/bloc/el-controvertit-domini-io/</id>
+    <published>2014-12-09T16:36:00+01:00</published>
+    <updated>2014-12-10T22:58:22+01:00</updated>
+    <author>
+      <name>Antoni</name>
+    </author>
+    <content type="html">&lt;p&gt;Fa ja un temps que es va posar de moda que les empreses joves emergents (&lt;em&gt;startups&lt;/em&gt;) vinculades amb el món de la tecnologia donessin d’alta un domini .io per a la seva presència i activitat a Internet. &lt;/p&gt;
+
+&lt;p&gt;Amb una mica d'imaginació, hom pot veure que .io pot ser quelcom així com &lt;em&gt;input output&lt;/em&gt; o bé representar un 1 (ú) i un 0 (zero) o ambdues coses al mateix temps. Imagino que que aquestes són les raons principals de la seva popularitat dins dels entorns on són més utilitzats a més de la possibilitat de poder registrar noms curts en un registre molt menys saturat.&lt;/p&gt;
+
+&lt;p&gt;Fins i tot Google considera el domini .io com un domini genèric de primer nivell (com els .com, .org, .net, etcètera).&lt;/p&gt;
+
+&lt;p&gt;Ara bé .io és el domini del Territori Britànic de l'Oceà Índic, un arxipèlag de 2.300 illes i atols que des de la seva descoberta per en &lt;a href="https://ca.wikipedia.org/wiki/Vasco_da_Gama"&gt;Vasco da Gama&lt;/a&gt; ha passat per diverses jurisdiccions i actualment es troba sota la britànica (a excepció de l'illa de Diego Garcia que està sota jurisdicció de l'exèrcit dels EEUU, d'acord amb un conveni signat entre estatunidencs i britànics).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/imatges/plantacio_a_DG.jpg" alt="Antiga plantació a Diego Garcia" title="Antiga plantació a Diego Garcia" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Els ingressos procedents del registre de dominis .io no recauen sobre els habitants d'aquest arxipèlag car, més enllà de militars, no disposen de població autòctona. Els que hi vivien, els îlois, van ser forçats a emigrar després de ser adquirides les seves plantacions de cocoters i deixar-los sense feina. Els ingressos, com deia, no van a parar a cap illa de l'Índic sinó a arques del Regne Unit.&lt;/p&gt;
+
+&lt;p&gt;Hi han reclamacions d'aquests territoris des dels anys 1980 per part de Maurici i Seychelles. Avui l'assumpte està en mans del &lt;a href="http://www.echr.coe.int"&gt;Tribunal Europeu dels Drets Humans&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Un any d'existència</title>
+    <link rel="alternate" href="http://nauta.cat/bloc/un-any-d-existencia/"/>
+    <id>http://nauta.cat/bloc/un-any-d-existencia/</id>
+    <published>2014-11-16T21:51:00+01:00</published>
+    <updated>2014-11-16T22:02:40+01:00</updated>
+    <author>
+      <name>Antoni</name>
+    </author>
+    <content type="html">&lt;p&gt;Aquest espai ja té un any d'existència. M'ho recorda el registrador que vol que renovi el domini i jo que no sé què fer. Efímer sempre ha volgut dir de curta durada i un any no és un lapse de temps breu. Veuré què decideixo.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Allotjat a GitHub</title>
+    <link rel="alternate" href="http://nauta.cat/bloc/allotjat-a-github/"/>
+    <id>http://nauta.cat/bloc/allotjat-a-github/</id>
+    <published>2014-09-25T21:34:00+02:00</published>
+    <updated>2014-09-25T22:54:14+02:00</updated>
+    <author>
+      <name>Antoni</name>
+    </author>
+    <content type="html">&lt;p&gt;Avui fa exactament set mesos que vaig penjar l'últim article en aquest web. Durant tot aquest temps el meu &lt;a href="http://www.raspberrypi.org"&gt;Raspberry Pi&lt;/a&gt;, actuant de servidor, ha subministrat totes aquelles pàgines que li han estat sol·licitades i ho ha fet amb escreix. &lt;/p&gt;
+
+&lt;p&gt;El cert és que estic prou satisfet de la tasca que ha portat a terme. Durant aquest lapse de temps, aquests set mesos als que feia referència més amunt, el servidor ha estat funcionant ininterrompudament, exceptuant aquelles ocasions en les que he actualitzat el sistema i reiniciat l'aparell, més per vici que per necessitat.&lt;/p&gt;
+
+&lt;p&gt;Com de tant en tant m'agafen rampells tecnològics i tecnòfils, feia uns dies que em venia de gust trastejar alguna &lt;em&gt;placa de desenvolupament&lt;/em&gt; semblant i després de molt mirar i remirar vaig optar per una &lt;a href="http://beagleboard.org/black"&gt;BeagleBone Black&lt;/a&gt;. La BBB és una placa superior en molts aspectes a la Raspberry Pi: té un processador més potent i amb més velocitat (un Texas Instruments AM335x 1GHz ARM® Cortex-A8) i a més porta incorporada (soldada) una targeta eMMC de 4GB, la qual cosa evita la necessitat d'utilitzar una targeta SD (microSD en el cas de la BBB). Aquestes són algunes de les seves característiques més evidents.&lt;/p&gt;
+
+&lt;p&gt;Un cop vaig rebre la placa el primer que se'm va passar pel cap va ser que fóra una bona idea substituir el Raspberry Pi pel BeagleBone Black. Vaig intentar instal·lar-li l'OpenBSD però aquest no em reconeixia la targeta eMMC (l'OpenBSD està en una fase molt beta en les arquitectures ARM tot i que és bastant probable que un un futur molt proper es pugui instal·lar sense més dificultat).&lt;/p&gt;
+
+&lt;p&gt;Finalment vaig optar per Debian, una de les poques distribucions GNU/Linux per les que tinc una mica de consideració. Cal dir però que, en general, prefereixo els BSDs als Linux. Els primers són sistemes coherents amb ells mateixos i els segons els trobo torrebabelians, si se'm permet l'expressió. El servidor web, evidentment, Nginx.&lt;/p&gt;
+
+&lt;p&gt;Un cop vaig tenir a punt el nou servidor, vaig posar-lo al lloc que ocupava el Raspberry Pi. El BBB funcionava més ràpid i es notava. La latència era molt menor i a més funcionava molt lleuger. En qualsevol cas l'embut sempre ha estat en la connexió ADSL des de la que servia (sí, ho dic en pretèrit).&lt;/p&gt;
+
+&lt;p&gt;Ara bé ¿em compro una nova placa i l'aparco donant-li un ús de servidor? Doncs no! Jo el que volia i vull és trastejar. Acceptada aquesta conclusió només quedava cercar un servidor alternatiu i gratuït (sense que això fos definitori) i què millor que &lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt; des de les seves &lt;code&gt;gh-pages&lt;/code&gt;?&lt;/p&gt;
+
+&lt;p&gt;Així doncs ara aquest web està allotjat i és servit des de GitHub i tinc dues plaques: una Raspberry Pi i una BeagleBone Black amb les que poder jugar.&lt;/p&gt;
+
+&lt;p&gt;Veurem l'ús que acaben tenint…&lt;/p&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>John Williams</title>
+    <link rel="alternate" href="http://nauta.cat/bloc/john-williams/"/>
+    <id>http://nauta.cat/bloc/john-williams/</id>
+    <published>2014-02-25T19:43:00+01:00</published>
+    <updated>2014-02-25T23:08:10+01:00</updated>
+    <author>
+      <name>Antoni</name>
+    </author>
+    <content type="html">&lt;p&gt;Porto uns dies allunyat del bloc. El motiu no és altre que mantenir aquest espai no està dins de les meves prioritats més immediates i, com he dit en més d'una ocasió, és només un &lt;em&gt;divertimento&lt;/em&gt;. &lt;/p&gt;
+
+&lt;p&gt;El fet és que quinze dies enrere em vaig apropar a la meva llibreria de capçalera. Anava a la recerca d'un assaig històric concret que no tenien en estoc. Vaig aprofitar que estava a la llibreria per donar-hi una volta i vet aquí que en un prestatge hi havia un llibre que em demanava que me'l llegís. Quan el vaig tenir a les mans vaig adonar-me que era una novel·la històrica. Tot i que de tant en tant me'n llegeixo alguna, no és del tipus de lectura que m'apassioni en excés car si es tracta d'història, prefereixo l'assaig a la novel·la. El fet és que vaig acabar comprant-lo.&lt;/p&gt;
+
+&lt;h2 id="august"&gt;August&lt;/h2&gt;
+
+&lt;p&gt;El llibre en qüestió és una semblança històrica del que va ser el primer emperador de Roma: Gai Octavi César, anomenat l'August (el dels [bons] auguris).&lt;/p&gt;
+
+&lt;p&gt;Des de bon començament vaig adonar-me que estava davant d'un gran narrador, algú capaç d'encisar-te amb l'ús gairebé perfecte d'un medi tan imperfecte com és el llenguatge.&lt;/p&gt;
+
+&lt;p&gt;La novel·la s'estructura al voltant d'una col·lecció de cartes que s'intercanvien una sèrie de personatges, molts d'ells històrics, i que ens ajuden a construir la semblança de l'home que va governar els destins dels romans durant quaranta-cinc anys, de la seva família, dels seus amics i enemics així com l'entorn, les guerres civils, les constants lluites pel poder, les traïcions i el gaudiment, per part del poble romà, de la &lt;em&gt;pax augusta&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Delicadesa i sofisticació s'entrellacen amb la brutalitat i l'amor amb la luxúria i el desenfrenament formant una xarxa espessa amb la que capturar el poder i la seva administració, però incapaç de retenir les misèries i les grandeses humanes.&lt;/p&gt;
+
+&lt;p&gt;Encara no havia acabat de llegir &lt;strong&gt;August&lt;/strong&gt; que em vaig escapar a corre-cuita, a comprar-ne una altra del mateix autor, el nom del qual dóna títol a aquesta entrada.&lt;/p&gt;
+
+&lt;h2 id="stoner"&gt;Stoner&lt;/h2&gt;
+
+&lt;p&gt;Aquesta novel·la, d'una concepció més clàssica, tracta de la vida d'un pagès (un &lt;em&gt;redneck&lt;/em&gt;?) que, animat pels seus pares, se'n va a la universitat a estudiar enginyeria agrònoma però descobreix que el què veritablement l'apassiona és la literatura anglesa. Un cop acaba els estudis es queda a la mateixa universitat exercint de professor. Un matrimoni fracassat, ja abans de celebrar-se i consumar-se, l'acompanyarà durant la tota la seva existència la nota de color de la qual la donarà una apassionada relació adúltera. També aquesta novel·la tracta de l'exercici del poder que exerceixen tant la seva muller com els col·legues de la universitat amb els seus tripijocs.&lt;/p&gt;
+
+&lt;p&gt;Un personatge insignificant amb una vida grisa no té res d'interessant, aparentment, però l'autor aconsegueix despertar-nos que sentim una gran empatia amb el protagonista, amb qui compartim tant les seves frustracions com les seves il·lusions i els sentiments i les reaccions que aquestes generen.&lt;/p&gt;
+
+&lt;p&gt;Ambdues novel·les, doncs, tenen molts paral·lelismes. Tot i que de temàtiques diferents, descriuen dues vides, una cadascuna, i tracten de l'exercici del poder. També, tot i que sigui anecdòtic, les filles dels respectius protagonistes són absolutament promiscues.&lt;/p&gt;
+
+&lt;p&gt;John Williams: una gran troballa que ben mereix ocupar un lloc destacat a la literatura universal.&lt;/p&gt;
+
+&lt;p&gt;Ambdós llibres editats per Edicions 62: &lt;a href="http://www.grup62.cat/llibre-august-94823.html"&gt;August&lt;/a&gt;, &lt;a href="http://www.grup62.cat/llibre-stoner-94670.html"&gt;Stoner&lt;/a&gt;.&lt;/p&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>Indexant el "car"</title>
+    <link rel="alternate" href="http://nauta.cat/bloc/indexant-el-car/"/>
+    <id>http://nauta.cat/bloc/indexant-el-car/</id>
+    <published>2014-02-12T19:53:00+01:00</published>
+    <updated>2014-02-12T20:57:42+01:00</updated>
+    <author>
+      <name>Antoni</name>
+    </author>
+    <content type="html">&lt;p&gt;Amb l'ànim de facilitar la tasca d'indexar el contingut, dies enrere vaig donar d'alta aquest web a les &lt;a href="http://www.google.com/webmasters/"&gt;Eines per a Webmasters de Google&lt;/a&gt;, per a indicar-li on es troba l'arxiu &lt;code&gt;sitemap.xml&lt;/code&gt; d'aquest lloc. &lt;/p&gt;
+
+&lt;p&gt;Vet aquí els capricis dels algoritmes que fan possible una indexació intel·ligent que les quatre primeres paraules que Google té indexades d'aquest lloc són: &lt;em&gt;nauta&lt;/em&gt;, &lt;em&gt;contingut&lt;/em&gt;, &lt;em&gt;servidor&lt;/em&gt; i &lt;em&gt;car&lt;/em&gt;, i en aquest ordre.&lt;/p&gt;
+
+&lt;p&gt;Amb referència a les tres primeres, poca cosa a dir. Ara bé, el que sí m'ha sorprès és que &lt;em&gt;car&lt;/em&gt; ocupi la quarta posició car &lt;em&gt;car&lt;/em&gt; no és més que una conjunció que &lt;em&gt;serveix per a introduir una proposició en què es dóna la raó d’allò que s’ha dit en la proposició anterior&lt;/em&gt; (així ho defineix el DIEC2). Sí, &lt;em&gt;car&lt;/em&gt; té altres accepcions però jo no les he utilitzat en aquest bloc i sí tinc costum, en el llenguatge escrit, de fer ús d'aquesta partícula (de vegades fins hi tot en el llenguatge oral tot i que sembla un xic pretensiós a orelles de qui escolta).&lt;/p&gt;
+
+&lt;p&gt;Sembla evident que si Google la té en compte deu ser perquè es poc utilitzada car sinó li donaria la mateixa importància que pugui tenir un article, una preposició o un pronom, per fer esment de quelcom.&lt;/p&gt;
+
+&lt;p&gt;Si la manera natural de fer ús del llenguatge és mitjançant la via de l'estalvi ¿com és possible que car sigui un mot en desús si només el formen tres lletres?&lt;/p&gt;
+
+&lt;p&gt;Un dia d'aquests, i portat de la maneta per algun cercador, apareixerà per aquests indrets un senyor, ja sigui de Nairobi, Perth o d'Anchorage, interessat en canviar-se el vehicle. La seva desil·lusió tindrà lloc quan vegi que en aquest lloc no hi han &lt;em&gt;cars&lt;/em&gt;, si més no d'aquells que haurien atret el seu interès.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;C'est la vie!&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Absolutament estàtic</title>
+    <link rel="alternate" href="http://nauta.cat/bloc/absolutament-estatic/"/>
+    <id>http://nauta.cat/bloc/absolutament-estatic/</id>
+    <published>2014-02-03T20:01:00+01:00</published>
+    <updated>2014-02-04T00:52:00+01:00</updated>
+    <author>
+      <name>Antoni</name>
+    </author>
+    <content type="html">&lt;p&gt;Des d'ahir aquest bloc és absolutament estàtic, això vol dir que està format per una col·lecció d'arxius &lt;code&gt;html&lt;/code&gt; que el servidor lliura directament sense cap esforç afegit, ni tan sols el de la compressió car aquesta ja està feta per endavant. &lt;/p&gt;
+
+&lt;p&gt;Enrere s'han quedat Ghost i Pico, projectes prou interessants però amb els que no em vaig acabar de sentir prou còmode i no és que fossin complicats de fer anar, ans al contrari car la simplicitat era una característica comuna, senzillament &lt;a href="http://middlemanapp.com/"&gt;Middleman&lt;/a&gt; (la meva opció) omple les meves expectatives, si més no, actualment. No descarto altres projectes en un futur però ara mateix crec que aquest ha vingut per quedar-se.&lt;/p&gt;
+
+&lt;p&gt;Middleman, doncs, és un generador de webs estàtiques, desenvolupat per Thomas Reynolds que rutlla sobre &lt;a href="https://www.ruby-lang.org"&gt;Ruby&lt;/a&gt; (un llenguatge de programació creat per Yukihiro "Matz" Matsumoto l'any 1993).&lt;/p&gt;
+
+&lt;p&gt;Abans de decantar-me per Middleman vaig estar estudiant la possibilitat d'altres opcions com ara &lt;a href="http://jekyllrb.com"&gt;Jekyll&lt;/a&gt; però vaig optar pel primer car em va semblar un projecte més madur.&lt;/p&gt;
+
+&lt;p&gt;La instal·lació és senzilla, molt, i entre les prestacions es troba la possibilitat de visualitzar amb el navegador, el contingut mitjançant un servidor virtual abans de la creació dels arxius, la pròpia creació dels arxius incloent-hi la compressió dels mateixos i la pujada al servidor d'aquells  que han sofert canvis (sincronització).&lt;/p&gt;
+
+&lt;p&gt;El projecte, pel meu gust, no està prou documentat. No vull dir que no hi hagi pas documentació, que hi és, però no en la quantitat i densitat que hom esperaria i desitjaria.&lt;/p&gt;
+
+&lt;p&gt;Amb referència a les plantilles, es pot escollir entre diferents llenguatges. Jo m'he quedat amb el que ve per defecte i que està inclòs en les llibreries estàndard de Ruby: Erb. M'ha semblat un xic més enrevessat que Twig (que fa servir Pico) o Handlebars (utilitzat per Ghost). Deu ser cosa d'acostumar-s'hi, vull imaginar.&lt;/p&gt;
+
+&lt;p&gt;És fàcil preguntar-se ¿què ho fa que ara a l'inici del segle XXI algú opti per fer un web estàtic amb la gran quantitat d'eines que hi ha per fer webs amb contingut dinàmic? ¿No és això involucionar? Doncs crec que no i ara passo a exposar els avantatges que hi veig:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Velocitat: Sense la necessitat d'utilitzar una base de dades i un programa intermedi que interpreti codi, el lliurament del web és immediat.&lt;/li&gt;
+  &lt;li&gt;Seguretat: No hi han riscos de que algú amb males intencions pugui introduir-se al web i alterar a conveniència el contingut car, entre d'altres coses, no hi ha tauler d'administració ni base de dades.&lt;/li&gt;
+  &lt;li&gt;Simplicitat: No cal fer manteniment de cap base de dades ni actualitzar periòdicament el CMS per tal de corregir possibles vulnerabilitats del mateix.&lt;/li&gt;
+  &lt;li&gt;Portabilitat: El web pot ser traslladat d'un servidor a un altre només traslladant els arxius. L'exportació i configuració d'una nova base de dades és inexistent.&lt;/li&gt;
+  &lt;li&gt;Costos: Els continguts estàtics es poden penjar de llocs com &lt;a href="https://github.com/"&gt;Github&lt;/a&gt; de manera gratuïta i en el cas d'allotjar-los en un &lt;em&gt;hosting&lt;/em&gt;, la no necessitat de base de dades i d'altres tecnologies abarateix el cost de l'allotjament.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tinc la impressió que tornar a la simplicitat dels continguts estàtics serà tota una tendència en un futur molt proper. Veurem què tal se'm dóna això de fer de pitonís (permeteu-me la llicència de masculinitzar el mot ara que tot es feminitza).&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Pico, de conte</title>
+    <link rel="alternate" href="http://nauta.cat/bloc/pico-de-conte/"/>
+    <id>http://nauta.cat/bloc/pico-de-conte/</id>
+    <published>2014-01-20T20:35:00+01:00</published>
+    <updated>2014-02-02T19:21:44+01:00</updated>
+    <author>
+      <name>Antoni</name>
+    </author>
+    <content type="html">&lt;p&gt;En l'anterior article parlava de la possibilitat d'adoptar &lt;a href="http://pico.dev7studios.com/"&gt;Pico&lt;/a&gt; com a gestor de contingut d'aquest bloc. Tenia &lt;em&gt;mals pensaments&lt;/em&gt;, deia. Bé, les cabòries ja se m'han passat després d'instal·lar-lo al RaspPi. De fet segueix instal·lat en el moment d'escriure aquesta entrada si bé no l'enllaço car té els dies comptats. &lt;/p&gt;
+
+&lt;p&gt;No és que no funcioni bé, que sí ho fa però no funciona prou ràpid i si ara és &lt;em&gt;gairebé&lt;/em&gt; imperceptible el què és clar que sí es convertirà en lent si aquest bloc algun dia arriba a tenir, posem per cas, dos-cents articles.&lt;/p&gt;
+
+&lt;p&gt;La pàgina d'inici de la majoria de blocs és un índex de les entrades, o de part d'elles si es pagina (del verb paginar) o se'n mostra un extracte. Doncs bé, Pico ha de llegir i ordenar tots els articles per poder realitzar l'índex. Si hi han dues-centes entrades doncs caldrà que llegeixi dos-cents arxius (és possible matisar això però ara no toca). És aquí on rau el problema d'un gestor de continguts basat en arxius de text.&lt;/p&gt;
+
+&lt;p&gt;És clar que es pot utilitzar una memòria de cau per accelerar el servei però… la lleugeresa que cerco no està en memòries de cau (tot i que les utilitzo).&lt;/p&gt;
+
+&lt;p&gt;En canvi, aquest gestor de contingut pot administrar de manera molt senzilla un web. Aquí el problema de llegir tots els arxius desapareix. Amb una bona estructura del web es poden aconseguir grans prestacions amb una mínima càrrega. En resum, molta més eficiència que altres gestors de contingut basats en base de dades.&lt;/p&gt;
+
+&lt;p&gt;I vet aquí un gat, i vet aquí un gos, i vet aquí que el conte ja s'ha fos.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Mals pensaments</title>
+    <link rel="alternate" href="http://nauta.cat/bloc/mals-pensaments/"/>
+    <id>http://nauta.cat/bloc/mals-pensaments/</id>
+    <published>2014-01-14T22:58:00+01:00</published>
+    <updated>2014-02-02T20:21:18+01:00</updated>
+    <author>
+      <name>Antoni</name>
+    </author>
+    <content type="html">&lt;p&gt;Ahir vaig actualitzar la plataforma de publicació que serveix aquest web: &lt;a href="https://ghost.org"&gt;Ghost&lt;/a&gt;. De la versió 0.3.3 hem passat a la 0.4.0 i aquesta última incorpora unes quantes novetats com ara la creació de pàgines estàtiques i altres noves funcionalitats així com correcció d'errors. &lt;/p&gt;
+
+&lt;p&gt;El cert és que m'agrada Ghost. És senzill i efectiu. Al seu darrere hi ha un equip de desenvolupadors que, amb molta il·lusió, està treballant de valent per tirar endavant l'aplicació, atendre el fòrum i donar servei i ajut a qui ho necessiti (jo, però, sóc d'aquells afortunats que gairebé mai el necessito)&lt;/p&gt;
+
+&lt;h2 id="tendncies"&gt;Tendències&lt;/h2&gt;
+
+&lt;p&gt;Sembla que no sóc l'únic que va a la recerca de la simplicitat. Només cal passejar-se pel fòrum per veure que hi ha molta gent que fuig, principalment de &lt;a href="http://ca.wordpress.org"&gt;WordPress&lt;/a&gt; i no només d'aquesta sinó també d'altres plataformes, que amb el temps han acabat esdevenint feixugues, pesades i carregoses. El codi de les mateixes, principalment dels plugins, és caòtic en molts casos, i donen més problemes que no pas solucions.&lt;/p&gt;
+
+&lt;p&gt;No diré que aquests gestors de contingut amb solera no puguin ser útils per a molta gent però en molts escenaris sobra plataforma i sobretot milers de línies de codi per fer el què fan donant funcionalitats innecessàries per a la majoria de mortals car amb molt menys també es passa.&lt;/p&gt;
+
+&lt;h2 id="mals-pensaments"&gt;Mals pensaments&lt;/h2&gt;
+
+&lt;p&gt;El títol d'aquesta entrada fa referència a que des de fa dies coquetejo amb la possibilitat de servir aquest web mitjançant &lt;a href="http://pico.dev7studios.com"&gt;Pico&lt;/a&gt;, que, com diuen el seus creadors, és un &lt;em&gt;gestor de contingut (CMS) basat en arxius de text, estúpidament senzill i ultra-ràpid&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Pico funciona sobre &lt;a href="http://php.net"&gt;PHP&lt;/a&gt; (Ghost ho fa sobre &lt;a href="http://nodejs.org"&gt;Node.js&lt;/a&gt;) i utilitza &lt;a href="http://twig.sensiolabs.org"&gt;Twig&lt;/a&gt; per a les plantilles. La informació s'emmagatzema en arxius de text amb format &lt;a href="http://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt; (Ghost també utilitza aquest format però emmagatzema la informació en una base de dades lleugera com SQLite).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/imatges/encotillat.jpg" alt="Encotillat" /&gt;&lt;/p&gt;
+
+&lt;p&gt;El cert és que amb Pico em sento més lliure i menys encotillat (vet aquí la imatge del damunt). La simplicitat sempre dóna més llibertat de moviments.&lt;/p&gt;
+
+&lt;p&gt;Tot i la seva senzillesa, Pico avui encara disposa de més funcionalitats que Ghost. Ja he adaptat el disseny a Twig i aquest, evidentment, es presenta idèntic a l'actual. Només queden alguns retocs i… prendre la decisió.&lt;/p&gt;
+
+&lt;p&gt;Com sempre, només un &lt;em&gt;divertimento&lt;/em&gt; perquè el meu Tamagotxi, un Raspberry Pi, i jo estiguem contents i distrets.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Camisa nova</title>
+    <link rel="alternate" href="http://nauta.cat/bloc/camisa-nova/"/>
+    <id>http://nauta.cat/bloc/camisa-nova/</id>
+    <published>2014-01-01T11:27:00+01:00</published>
+    <updated>2014-02-05T22:00:36+01:00</updated>
+    <author>
+      <name>Antoni</name>
+    </author>
+    <content type="html">&lt;p&gt;He tornat a canviar el disseny del web i això que no volia perdre el temps fent-ne un. Aquest web i el seu servidor, un humil Raspberry Pi, semblen el meu Tamagotxi particular al que haig de cuidar bé perquè estigui feliç. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href="/bloc/algunes-optimitzacions/#disseny"&gt;L'anterior disseny&lt;/a&gt; era (i és) molt elaborat però semblava més orientat a la creació literària, amb una pàgina d'entrada amb forma d'índex de llibre. Aquest que ara hi ha instal·lat està fortament inspirat en l'anterior, conservant alguns detalls i mantenint la tipografia però utilitzant-la de manera més agosarada, donant-li més protagonisme: lletres més grans i ús intensiu de la cursiva en els títols.&lt;/p&gt;
+
+&lt;p&gt;Aquests canvis també han afectat el logotip. De l'austera àncora marinera he passat a aquest home volador que reposa sobre una textura de paper esgrogueït, una petita nota de color a la pàgina d'entrada.&lt;/p&gt;
+
+&lt;p&gt;A veure si quan tingui una mica més de temps poleixo aquest disseny car està fet a corre-cuita.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Adéu comentaris</title>
+    <link rel="alternate" href="http://nauta.cat/bloc/adeu-comentaris/"/>
+    <id>http://nauta.cat/bloc/adeu-comentaris/</id>
+    <published>2013-12-26T13:05:00+01:00</published>
+    <updated>2014-02-02T00:40:54+01:00</updated>
+    <author>
+      <name>Antoni</name>
+    </author>
+    <content type="html">&lt;p&gt;Quan vaig obrir aquest bloc una de les primeres coses que vaig fer va ser habilitar els comentaris. &lt;em&gt;Un bloc sense comentaris deu ser com uns pantalons sense butxaques&lt;/em&gt;, vaig pensar. Així doncs em vaig donar d'alta a &lt;a href="http://disqus.com/"&gt;Disqus&lt;/a&gt; per poder-los habilitar, car aquesta plataforma de publicació no els gestiona directament. &lt;/p&gt;
+
+&lt;p&gt;Passats uns dies i després de grans reflexions he arribat a la conclusió que no els necessito. Si els possibles comentaris fossin critiques, només farien que estigués més d'acord amb mi mateix. Si fossin elogis tampoc em serien d'utilitat car el meu nivell d'autoestima ja és el suficient per a una salut mental digna. I què carall, propostes de sexe no n'arriben mai via comentaris.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/imatges/oscarwilde.jpg" alt="Òscar Wilde" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Per si tot això no fos suficient, l'espai que ocupa la zona de comentaris enlletgeix tota la pàgina i jo, en la meva condició d'esteta (gràcies Òscar per contribuir-hi), no m'ho puc permetre.&lt;/p&gt;
+
+&lt;p&gt;Així doncs: Adéu comentaris!&lt;/p&gt;
+</content>
+  </entry>
+</feed>
