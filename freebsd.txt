@@ -1,0 +1,292 @@
+#!/bin/sh
+# A veure si ho esgarrem tot
+
+pkg
+pkg update 
+pkg install -y nano isc-dhcp43-server dnscrypt-proxy openntpd curl
+
+echo 'security.jail.allow_raw_sockets=1' >> /etc/sysctl.conf
+echo 'PasswordAuthentication yes' >> /etc/ssh/sshd_config
+
+[ -f /etc/rc.conf ] && mv /etc/rc.conf /etc/rc.conf.original
+
+cat <<'EOF' > /etc/rc.conf
+hostname="servidor.hermes.cat"
+ifconfig_em0="inet 192.168.178.7 netmask 255.255.255.0"
+defaultrouter="192.168.178.1"
+
+keymap="es.acc"
+
+sshd_enable="YES"
+powerd_enable="YES"
+dumpdev="NO"
+zfs_enable="YES"
+clear_tmp_enable="YES"
+
+sendmail_enable="NONE"
+sendmail_submit_enable="NO"
+sendmail_outbound_enable="NO"
+sendmail_msp_queue_enable="NO"
+
+pf_enable="YES"
+pf_flags="" 
+pf_rules="/etc/pf.conf"
+pflog_enable="YES"
+pflog_logfile="/var/log/pflog"  
+pflog_flags=""
+
+gateway_enable="YES"
+
+
+# El pont
+cloned_interfaces="bridge0"
+ifconfig_bridge0="inet 172.16.16.1 netmask 255.255.255.0 addm em1 addm em2 addm em3 up"
+
+ifconfig_em1="up"
+ifconfig_em2="up"
+ifconfig_em3="up"
+
+dhcpd_enable="YES"
+dhcpd_ifaces="bridge0"
+
+local_unbound_enable="YES"
+
+dnscrypt_proxy_enable="YES"
+#dnscrypt_proxy_flags="-l /dev/null -R dnscrypt.eu-nl -a 127.0.0.1:40"
+dnscrypt_proxy_flags="-l /dev/null -R dnscrypt.eu-dk -a 127.0.0.1:40"
+
+jail_enable="YES"   # Set to NO to disable starting of any jails
+jail_list="plex tvhe"     # Space separated list of names of jails
+
+EOF
+
+[ -f /usr/local/etc/dhcpd.conf ] && mv /usr/local/etc/dhcpd.conf /usr/local/etc/dhcpd.conf.original
+
+cat <<'EOF' > /usr/local/etc/dhcpd.conf
+# dhcpd.conf
+#
+# Sample configuration file for ISC dhcpd
+#
+
+# option definitions common to all supported networks...
+option domain-name "hermes.cat";
+option domain-name-servers 172.16.16.1;
+
+
+default-lease-time 600;
+max-lease-time 7200;
+
+# Use this to enble / disable dynamic dns updates globally.
+ddns-update-style none;
+
+# If this DHCP server is the official DHCP server for the local
+# network, the authoritative directive should be uncommented.
+authoritative;
+
+# Use this to send dhcp log messages to a different log file (you also
+# have to hack syslog.conf to complete the redirection).
+#log-facility local7;
+
+subnet 172.16.16.0 netmask 255.255.255.0 {
+	range 172.16.16.20 172.16.16.255;
+	option routers 172.16.16.1;
+	option subnet-mask 255.255.255.0;
+}
+
+EOF
+
+[ -f /etc/pf.conf ] && mv /etc/pf.conf /etc/pf.conf.original
+
+cat <<'EOF' > /etc/pf.conf
+ext_if="em0"
+int_if="bridge0"
+localnet=$int_if:network
+table <martians> { 0.0.0.0/8 10.0.0.0/8 127.0.0.0/8 169.254.0.0/16     \
+                   172.16.0.0/12 192.0.0.0/24 192.0.2.0/24 224.0.0.0/3 \
+                   192.168.0.0/16 198.18.0.0/15 198.51.100.0/24        \
+                   203.0.113.0/24 }
+set block-policy drop
+set loginterface $ext_if
+set skip on lo0
+scrub in all
+nat on $ext_if inet from $localnet to any -> ($ext_if)
+block in quick on $ext_if from <martians> to any
+block return out quick on $ext_if from any to <martians>
+block all
+pass from $localnet to any keep state
+pass out quick inet
+
+EOF
+
+[ -f /usr/local/etc/ntpd.conf ] && mv /usr/local/etc/ntpd.conf /usr/local/etc/ntpd.conf.original
+
+cat <<'EOF' > /usr/local/etc/ntpd.conf
+server hora.roa.es
+sensor *
+constraints from "https://www.google.com"
+
+EOF
+
+[ -f /etc/unbound/unbound.conf ] && mv /etc/unbound/unbound.conf /etc/unbound/unbound.conf.original
+
+cat <<'EOF' > /etc/unbound/unbound.conf
+server:
+		username: unbound
+		directory: /var/unbound
+		chroot: /var/unbound
+		pidfile: /var/run/local_unbound.pid
+#	auto-trust-anchor-file: /var/unbound/root.key
+
+    	interface: 127.0.0.1
+		interface: 172.16.16.1
+    	do-ip6: no
+  
+    	access-control: 127.0.0.0/8 allow
+		access-control: 172.16.16.0/24 allow
+    	hide-identity: yes
+    	hide-version: yes
+    	do-not-query-localhost: no
+  
+    	tcp-upstream: yes
+  
+    	private-address: 10.0.0.0/8
+    	private-address: 172.16.0.0/12
+    	private-address: 192.168.0.0/16
+    	
+		local-zone: "p.ara.cat" redirect
+    	local-data: "p.ara.cat A 127.0.0.1"
+
+  		include: "/etc/unbound/unbound_ad_servers"  
+
+forward-zone:
+    	name: "."
+    	forward-addr: 127.0.0.1@40
+
+remote-control:
+		control-enable: yes
+		control-interface: /var/run/local_unbound.ctl
+		control-use-cert: no
+	
+EOF
+
+[ -f /etc/resolv.conf ] && mv /etc/resolv.conf /etc/resolv.conf.original
+
+cat <<'EOF' > /etc/resolv.conf
+search hermes.cat
+# nameserver 8.8.8.8
+# nameserver 8.8.4.4
+nameserver 127.0.0.1
+options edns0
+
+EOF
+
+
+curl -sS -L --compressed "http://pgl.yoyo.org/adservers/serverlist.php?hostformat=unbound&showintro=0&mimetype=plaintext" > /etc/unbound/unbound_ad_servers
+
+[ -f /etc/jail.conf] && mv /etc/jail.conf /etc/jail.conf.original
+
+cat <<'EOF' > /etc/jail.conf
+# Common configs for all jails
+allow.nomount;
+exec.start = "/bin/sh /etc/rc";
+exec.stop = "/bin/sh /etc/rc.shutdown";
+exec.clean;
+host.hostname = "$name.hermes.cat";
+mount.devfs;
+path = "/zroot/jails/$name";
+ip4.addr = 172.16.16.$ip/24;
+interface = "bridge0";
+
+# Correu
+correu {
+	$ip = 11;
+}
+
+# Web
+web {
+	$ip = 12;
+}
+
+# Plex
+plex {
+	$ip = 13;
+}
+
+# TVHeadEnd
+tvhe {
+	$ip = 14;
+}
+
+EOF
+
+cd /
+
+zfs create zroot/jails/_base
+bsdinstall jail /zroot/jails/_base
+chroot /zroot/jails/_base
+
+rm /zroot/jails/_base/etc/rc.conf
+
+cat <<'EOF' > /zroot/jails/_base/etc/rc.conf
+sshd_enable="YES"
+dumpdev="NO"
+sendmail_enable="NONE"
+sendmail_submit_enable="NO"
+sendmail_outbound_enable="NO"
+sendmail_msp_queue_enable="NO"
+syslogd_enable="NO"
+
+EOF
+
+rm /zroot/jails/_base/etc/resolv.conf
+
+cat <<'EOF' > /zroot/jails/_base/etc/resolv.conf
+nameserver 172.16.16.1
+options edns0
+
+EOF
+
+cat <<'EOF' >> /zroot/jails/_base/etc/ssh/sshd_config
+PermitRootLogin yes
+PasswordAuthentication yes
+
+EOF
+
+zfs snapshot zroot/jails/_base@11.0-bootstrapped
+
+zfs send -R zroot/jails/_base@11.0-bootstrapped | zfs receive zroot/jails/correu
+zfs send -R zroot/jails/_base@11.0-bootstrapped | zfs receive zroot/jails/web
+zfs send -R zroot/jails/_base@11.0-bootstrapped | zfs receive zroot/jails/plex
+zfs send -R zroot/jails/_base@11.0-bootstrapped | zfs receive zroot/jails/tvhe
+
+mkdir -p zroot/jails/plex/tank/{Video,Audio,Pictures}
+
+cat 'plexmediaserver_enable="YES"' >> /zroot/jails/plex/etc/rc.conf
+
+cat <<'EOF' >> /zroot/jails/tvhe/etc/rc.conf
+tvheadend_enable="YES"
+tvheadend_flags="-C"
+
+EOF
+
+
+service jail start correu
+service jail start web
+service jail start plex
+service jail start tvhe
+
+pkg -j correu install -y opensmtpd
+pkg -j web install -y nginx
+pkg -j plex install -y plexmediaserver
+pkg -j tvhe install -y tvheadend
+
+service jail restart correu
+service jail restart web
+service jail restart plex
+service jail restart tvhe
+
+echo 'Acabat tot!'
+echo 'Toca fusta ...'
+
+#Falta configurar les gàbies jails.conf <----
+#Que HDHR i el switch tinguin una IP fixa ;)
