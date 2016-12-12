@@ -180,6 +180,8 @@ options edns0
 
 EOF
 
+service dnscrypt_proxy start
+service local_unbound start
 
 curl -sS -L --compressed "http://pgl.yoyo.org/adservers/serverlist.php?hostformat=unbound&showintro=0&mimetype=plaintext" > /etc/unbound/unbound_ad_servers
 
