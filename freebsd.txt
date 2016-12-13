@@ -1,7 +1,6 @@
 #!/bin/sh
 # A veure si ho esgarrem tot
 
-pkg
 pkg update 
 pkg install -y nano isc-dhcp43-server dnscrypt-proxy openntpd curl
 
@@ -175,9 +174,13 @@ EOF
 
 cat <<'EOF' > /etc/resolv.conf
 search hermes.cat
-# nameserver 8.8.8.8
-# nameserver 8.8.4.4
 nameserver 127.0.0.1
 options edns0
 
 EOF
+
+fetch http://nauta.cat/gabies.txt
+mv gabies.txt gabies.sh
+chmod +x gabies.sh
+
+echo "Després de reiniciar, executar ./gabies.sh"
