@@ -5,10 +5,26 @@
   <id>http://nauta.cat/</id>
   <link href="http://nauta.cat/"/>
   <link href="http://nauta.cat/feed.xml" rel="self"/>
-  <updated>2015-01-07T18:22:00+01:00</updated>
+  <updated>2017-09-10T16:50:00+02:00</updated>
   <author>
     <name>Antoni</name>
   </author>
+  <entry>
+    <title>Vas néixer amb la capacitat de decidir</title>
+    <link rel="alternate" href="http://nauta.cat/bloc/vas-neixer-amb-la-capacitat-de-decidir/"/>
+    <id>http://nauta.cat/bloc/vas-neixer-amb-la-capacitat-de-decidir/</id>
+    <published>2017-09-10T16:50:00+02:00</published>
+    <updated>2017-09-14T17:10:56+02:00</updated>
+    <author>
+      <name>Antoni</name>
+    </author>
+    <content type="html">&lt;p&gt;Ara més que mai, el futur de Catalunya és a les teves mans.&lt;/p&gt;
+
+&lt;iframe width="700" height="394" src="https://www.youtube.com/embed/4SIROcXg7GI?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Participa-hi!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>En memòria de les víctimes de l'atac al 'Charlie Hebdo'</title>
     <link rel="alternate" href="http://nauta.cat/bloc/en-memoria-de-les-victimes-de-l-atac-al-charlie-hebdo/"/>
@@ -257,26 +273,6 @@
 &lt;p&gt;Aquests canvis també han afectat el logotip. De l'austera àncora marinera he passat a aquest home volador que reposa sobre una textura de paper esgrogueït, una petita nota de color a la pàgina d'entrada.&lt;/p&gt;
 
 &lt;p&gt;A veure si quan tingui una mica més de temps poleixo aquest disseny car està fet a corre-cuita.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Adéu comentaris</title>
-    <link rel="alternate" href="http://nauta.cat/bloc/adeu-comentaris/"/>
-    <id>http://nauta.cat/bloc/adeu-comentaris/</id>
-    <published>2013-12-26T13:05:00+01:00</published>
-    <updated>2014-02-02T00:40:54+01:00</updated>
-    <author>
-      <name>Antoni</name>
-    </author>
-    <content type="html">&lt;p&gt;Quan vaig obrir aquest bloc una de les primeres coses que vaig fer va ser habilitar els comentaris. &lt;em&gt;Un bloc sense comentaris deu ser com uns pantalons sense butxaques&lt;/em&gt;, vaig pensar. Així doncs em vaig donar d'alta a &lt;a href="http://disqus.com/"&gt;Disqus&lt;/a&gt; per poder-los habilitar, car aquesta plataforma de publicació no els gestiona directament. &lt;/p&gt;
-
-&lt;p&gt;Passats uns dies i després de grans reflexions he arribat a la conclusió que no els necessito. Si els possibles comentaris fossin critiques, només farien que estigués més d'acord amb mi mateix. Si fossin elogis tampoc em serien d'utilitat car el meu nivell d'autoestima ja és el suficient per a una salut mental digna. I què carall, propostes de sexe no n'arriben mai via comentaris.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="/imatges/oscarwilde.jpg" alt="Òscar Wilde" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Per si tot això no fos suficient, l'espai que ocupa la zona de comentaris enlletgeix tota la pàgina i jo, en la meva condició d'esteta (gràcies Òscar per contribuir-hi), no m'ho puc permetre.&lt;/p&gt;
-
-&lt;p&gt;Així doncs: Adéu comentaris!&lt;/p&gt;
 </content>
   </entry>
 </feed>
